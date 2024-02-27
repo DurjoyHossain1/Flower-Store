@@ -1,10 +1,12 @@
 * {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 html,
 body {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   margin: auto;
   background-image: url("../images/bg-image.png");
   background-repeat: no-repeat;
@@ -28,7 +30,6 @@ body {
 .color {
   background-color: rgb(200, 126, 107);
   width: 100%;
-  /* height: 100px; */
 }
 
 
@@ -129,7 +130,7 @@ color: #fff;
 }
 .HOME {
   background-color: rgb(107, 80, 44);
-  height: 260px;
+  min-height: 27.282266526757606vh;
   display: flex;
   align-items: center;
   margin-bottom: 40px;
@@ -174,6 +175,12 @@ color: #fff;
 .div h1 {
   font-weight: 900;
 }
+#specail-button{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .offer_section h4 {
   text-align: center;
   font-size: 40px;
@@ -208,7 +215,7 @@ color: #fff;
   font-weight: 500;
 }
 .flowers #align {
-  padding: 81px;
+  padding: 36px;
   position: relative;
 }
 .flowers #align img {
@@ -217,7 +224,7 @@ color: #fff;
   margin-left: -270px;
 }
 .flowers #align h1 {
-  width: 82%;
+  /* width: 82%; */
   line-height: 1;
   color: rgb(72, 74, 75);
   margin-bottom: 20px;
@@ -528,7 +535,7 @@ color: #fff;
   background: none;
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .best_bye_three::before {
     margin-top: 275px;
     margin-left: -35px;
@@ -998,10 +1005,9 @@ color: #fff;
     margin-bottom: 15px;
   }
   .navbar-light .navbar-nav .nav-link {
-    font-size: 39px;
-    color: red;
+    font-size: 1rem;
     font-weight: 600;
-    width: 11%;
+    text-align: center;
   }
 
   .flowers #align p {
@@ -1069,16 +1075,10 @@ color: #fff;
     top: 600px;
     display: none;
   }
+} */
+#footer-items{
+  display: flex;
 }
-
-
-
-/* md device */
-
-
-
-
-
 .left7 {
   object-fit: contain;
 }
@@ -1096,3 +1096,32 @@ color: #fff;
   font-style: italic;
   font-weight: 300;
 }
+
+
+
+@media (max-width: 575.98px){
+  .chobi, .right, .right2 , .video::before, .Left3,.video::after,.right3,.left8,.left7,.best_by::before,.Left4,.flowers #align img,.best_by::after,.best_by_one::before,.best_by::before {
+    
+    display: none;
+  }
+  .best_by::before,.best_bye_three::before,.Left6{
+    display: none;
+  }
+  .navbar-light .navbar-nav .nav-link{
+    text-align: center;
+    font-size: 1rem;
+  }
+  .offer_section a {
+    padding: 4px 10px;
+  }.text h1{
+    font-size: 3em;
+  }#footer-items{
+    flex-direction: column;
+  }
+  .deatils #align1,.we_do #align2 p{
+    padding: 0px;
+  }
+  .flowers,.deatils,.we_do{
+    margin-bottom: 80px;
+  }
+} 
